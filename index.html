@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Do you really know your cats?</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta name="description" content="An interactive cat quiz game for cat lovers" charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="initial-page">
+	<h1>Interactive Cat Quiz</h1>
+	<form class="start-quiz">
+		<button type="submit" id="initial-submit-button">Start quiz!</button>
+	</form>
+</div>
+
+<div class="cat-questions hidden">
+	<form class="cat-questions">
+		<div class="question">
+			<p>How many teeth do adult cats have?</p>
+			<input type="radio" name="answer" id="#answer-a" value="0" required> <label for="#answer-a">20</label>
+			<input type="radio" name="answer" id="#answer-b" value="1" required> <label for="#answer-b">26</label>
+			<input type="radio" name="answer" id="#answer-c" value="2" required> <label for="#answer-c">30</label>
+			<input type="radio" name="answer" id="#answer-d" value="3" required> <label for="#answer-d">32</label>
+
+			<button type="submit" id="answer-submission">Submit</button>
+			<button type="reset">Clear</button>
+		</div>
+	</form>
+
+</div>
+
+<div class="solution hidden">
+	<p>Meow! You're a cat conoisseur!</p>
+	<p>The correct answer is</p>
+	<button type="submit" id="next-question">That was too easy!</button>
+
+	<div class="current-question stats"></div>
+	<div class="current-score stats"></div>
+</div>
+
+<div class="end-page hidden">
+	<p>You finished the quiz! Your score is</p>
+	<button type="submit" id="restart-quiz">Let me try again!</button>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="apps.js"></script>
+
+
+</body>
+</html>
