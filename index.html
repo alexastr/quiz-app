@@ -18,16 +18,31 @@
 </div>
 
 <div class="cat-questions hidden">
-	<form class="cat-questions">
+
+	<form class="cat-questions-form">
+		<div class="cat-photo">
+		<img src="photos/cat-teeth.jpg">
+		</div>
+		
 		<div class="question">
 			<p>How many teeth do adult cats have?</p>
+			<div class="question-option">
 			<input type="radio" name="answer" id="#answer-a" value="0" required> <label for="#answer-a">20</label>
+			</div>
+			<div class="question-option">
 			<input type="radio" name="answer" id="#answer-b" value="1" required> <label for="#answer-b">26</label>
+			</div>
+			<div class="question-option">
 			<input type="radio" name="answer" id="#answer-c" value="2" required> <label for="#answer-c">30</label>
+			</div>
+			<div class="question-option">
 			<input type="radio" name="answer" id="#answer-d" value="3" required> <label for="#answer-d">32</label>
+			</div>
+		</div>
 
-			<button type="submit" id="answer-submission">Submit</button>
+		<div class="question-button">
 			<button type="reset">Clear</button>
+			<button type="submit" id="answer-submission">Submit</button>
 		</div>
 	</form>
 
@@ -38,8 +53,11 @@
 	<p>The correct answer is</p>
 	<button type="submit" id="next-question">That was too easy!</button>
 
-	<div class="current-question stats"></div>
-	<div class="current-score stats"></div>
+	<div class="solution-stats">
+		<div class="current-question stats"></div>
+		<div class="current-score stats"></div>
+	</div>
+
 </div>
 
 <div class="end-page hidden">
