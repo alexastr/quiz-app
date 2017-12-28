@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<meta name="description" content="An interactive cat quiz game for cat lovers" charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bangers|Chewy" rel="stylesheet">
 </head>
 
 <body>
@@ -20,23 +21,24 @@
 <div class="cat-questions hidden">
 
 	<form class="cat-questions-form">
-		<div class="cat-photo">
-		<img src="photos/cat-teeth.jpg">
-		</div>
-		
-		<div class="question">
-			<p>How many teeth do adult cats have?</p>
-			<div class="question-option">
-			<input type="radio" name="answer" id="#answer-a" value="0" required> <label for="#answer-a">20</label>
-			</div>
-			<div class="question-option">
-			<input type="radio" name="answer" id="#answer-b" value="1" required> <label for="#answer-b">26</label>
-			</div>
-			<div class="question-option">
-			<input type="radio" name="answer" id="#answer-c" value="2" required> <label for="#answer-c">30</label>
-			</div>
-			<div class="question-option">
-			<input type="radio" name="answer" id="#answer-d" value="3" required> <label for="#answer-d">32</label>
+		<p>How many teeth do adult cats have?</p>
+
+		<div class="question-image">
+			<img src="photos/cat-teeth.jpg">
+			<div class="question">
+
+				<div class="question-option">
+				<input type="radio" name="answer" class="class-answer-a" id="#answer-a" value="0" required> <label for="#answer-a"><span></span>20</label>
+				</div>
+				<div class="question-option">
+				<input type="radio" name="answer" class="class-answer-b" id="#answer-b" value="1" required> <label for="#answer-b"><span></span>26</label>
+				</div>
+				<div class="question-option">
+				<input type="radio" name="answer" class="class-answer-c" id="#answer-c" value="2" required> <label for="#answer-c"><span></span>30</label>
+				</div>
+				<div class="question-option">
+				<input type="radio" name="answer" class="class-answer-d" id="#answer-d" value="3" required> <label for="#answer-d"><span></span>32</label>
+				</div>
 			</div>
 		</div>
 
@@ -49,6 +51,7 @@
 </div>
 
 <div class="solution hidden">
+	<img src="">
 	<p>Meow! You're a cat conoisseur!</p>
 	<p>The correct answer is</p>
 	<button type="submit" id="next-question">That was too easy!</button>
@@ -61,7 +64,7 @@
 </div>
 
 <div class="end-page hidden">
-	<p>You finished the quiz! Your score is</p>
+	<h1>You finished the quiz! Your score is</h1>
 	<button type="submit" id="restart-quiz">Let me try again!</button>
 </div>
 
